@@ -1,5 +1,5 @@
-function obtenerExtension(archivo) {
+function extension(archivo) {
     return archivo.split('.').pop();
 }
 
-console.log(obtenerExtension("documento.pdf"));
+console.log(extension("ejercicio15.pdf"));
