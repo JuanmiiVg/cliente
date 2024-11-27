@@ -1,5 +1,10 @@
-let arrayBool = [true, false, true, false, true, false, true, false, true, false];
+function fibonacciTresAnteriores(n) {
+    if (n <= 2) {
+        return 1;
+    }
+    return fibonacciTresAnteriores(n - 1) + fibonacciTresAnteriores(n - 2) + fibonacciTresAnteriores(n - 3);
+}
 
-let posiciones = arrayBool.map((element, index) => element ? index : null).filter(element => element !== null);
-
-console.log(posiciones); // [0, 2, 4, 6, 8]
+for (let i = 0; i < 10; i++) {
+    console.log(fibonacciTresAnteriores(i));
+}

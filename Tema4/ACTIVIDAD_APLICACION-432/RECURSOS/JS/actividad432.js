@@ -1,13 +1,8 @@
-const colores = [
-    { nombre: "Naranja", rgb: "#F39C12" },
-    { nombre: "Lima", rgb: "#COF312" },
-    { nombre: "Turquesa", rgb: "#12F3E5" },
-    { nombre: "Rosa", rgb: "#F312AF" },
-    { nombre: "Rojo", rgb: "#F31212" }
-];
-
-document.write("<ul>");
-colores.forEach(color => {
-    document.write(`<li>${color.nombre}: ${color.rgb}</li>`);
-});
-document.write("</ul>");
+function tienenMismasLetras(palabra1, palabra2) {
+    const ordenarLetras = (palabra) => palabra.split('').sort().join('');
+    return ordenarLetras(palabra1) === ordenarLetras(palabra2);
+}
+const palabra1 = prompt('Introduce la primera palabra:');
+const palabra2 = prompt('Introduce la segunda palabra:');
+const resultado = tienenMismasLetras(palabra1, palabra2);
+console.log(`Las palabras '${palabra1}' y '${palabra2}' ${resultado ? '' : 'no'} tienen las mismas letras`);
