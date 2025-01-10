@@ -1,0 +1,54 @@
+<!-- 
+6.18. Elabora un programa que permita añadir filas a una tabla HTML.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar Filas a una Tabla</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      .form-container {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agregar Filas a una Tabla</h1>
+
+    <div class="form-container">
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <input type="text" id="edad" placeholder="Edad" />
+      <input type="text" id="correo" placeholder="Correo" />
+      <button onclick="agregarFila()">Agregar Fila</button>
+    </div>
+
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas se agregarán aquí -->
+      </tbody>
+    </table>
+
+    <script src="RECURSOS/JS/actividad618.js"></script>
+  </body>
+</html>
