@@ -1,0 +1,28 @@
+<!-- 
+
+Actividad propuesta 6.2
+El penúltimo párrafo
+Crea un fragmento de HTML que contenga cinco párrafos y cuyas etiquetas no tengan ningún atributo.
+A continuación, muestra en la consola el contenido del penúltimo párrafo.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad Propuesta 6.2</title>
+    <script>
+      window.onload = function () {
+        var parrafos = document.getElementsByTagName("p");
+        console.log(parrafos[parrafos.length - 2].innerHTML);
+      };
+    </script>
+  </head>
+  <body>
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+    <p>Parrafo 4</p>
+    <p>Parrafo 5</p>
+  </body>
+</html>
