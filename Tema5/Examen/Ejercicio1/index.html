@@ -1,0 +1,33 @@
+<!-- 
+Crea una clase base llamada MaterialBiblioteca con las siguientes propiedades(id, título, autor; siendo id privado y único) y métodos:
+ - constructor(titulo, autor) : inicializa las propiedades.
+ - getId() : retorna el identificador único.
+ - info() : retorna un string con la informacion del material.
+ - Un método estático generarIdUnico() que genera un identificador único (usa Date.now() + un número aleatorio).
+
+Crea dos clases que hereden de MaterialBiblioteca : Libro que tendrá una propiedad adicional numeroPaginas y sobreescriba el método info()
+con esta información. Y revista que tendrá la propiedad adicional de edicion , sobreescribiendo también el método info() para incluirla.
+
+Crea una clase Usuario con las siguientes propiedades (nombre , materialPrestado) y métodos:
+ - constructor(nombre) : inicializa las propiedades.
+ - prestarMaterial(material) : agrega un material a la lista si no supera el límite de 3 materiales prestados.
+ - desolverMaterial(id) : elimina un material de la lista por su ID.
+ - listarMateriales() : muestra en consola los materiales prestados.
+ 
+ Crea objetos de las clases anteriores e implementa el flujo básico de este problema
+ - Crea varios materiales (libros y revistas).
+ - Crea un usuario y permite prestar y devolver materiales.
+ - Lista los materiales prestados por el usuario.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1 Examen</title>
+  </head>
+  <body>
+    <h1>Ejercicio 1 Examen</h1>
+    <script src="Recursos/ejercicio1.js"></script>
+  </body>
+</html>

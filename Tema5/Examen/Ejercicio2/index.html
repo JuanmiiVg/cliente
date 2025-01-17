@@ -1,0 +1,47 @@
+<!-- 
+Diseñar mediantes clases el siguiente problema. En esta ciudad hay Empresarios que almacenan una lista de hoteles y el
+código de su empresa (deberás controlar con expresiones regulares que el valor delo codigo es correcto: se compone de 3 letras empezando únicamente la primera por máyuscula, seguido de un guión, seguido de
+un número con una longitud de 1 a 5 seguido de un punto , y algún carácter especial como fin; por ejemplo "Cad-75643./").
+De las empresas podremos consultar la lista de hoteles y comprobar si contiene uno en particular.
+
+De los hoteles sabremos su nombre, ubicacion, el numero de estrellas, el precio de la habitación, el número de habitantes que tiene,
+las reservas para una determinada fecha por un cliente, la edad mínima y máxima para poder reservar estas habitaciones. Además
+de los métodos get y set de los atributos, podrás reservar una Habitación para una fecha, anular una reserva de habitación para una fecha,
+consultar los clientes que tienen una reserva una habitación para una fecha, anular una reserva de habitacion para una fecha, 
+consultar los clientes que tienen reserva para una fecha y conocer las habitaciones disponibles para una fecha, y obtener el precio
+final de una reserva que dependera del precio y el numero de estrellas (una estrella le suma al precio un 2%, dos estrellas un 5%,
+tres estrellas un 7%, cuatro estrellas un 10% y 5 estrellas un 15%). 
+
+De cada cliente se debe saber su nombre, apellidos, DNI y edad. Los clientes se podrán dar de alta o de baja.
+
+Para probar el ejercicio crea el empresario "Mario" con el codigo "Cad-75643./" tiene 3 hoteles en la ciudad hotel1, hotel2 y hotel3.
+En cada hotel tiene 10 habitaciones, excepto hotel3 que es de 20 habitaciones. Siendo su ubicacion, estrellas y precios valores
+que tu decides y comienzan todos sin reservas. Los requisitos para que un cliente pueda gestionar una reserva de una habitacion
+en hotel1 es una edad de 18-25(inclusive), para hotel2 es una edad de 26-35(inclusive), para hotel3 es una edad de 36-80(inclusive).
+
+Funciones que se deben de realizar:
+ - Crear un empresario con la lista de hoteles.
+ - Consultar la lista de hoteles para un empresario.
+ - Comprobar si el empresario tiene el hotel con nombre "Hotel el puerto".
+ - Crear los hoteles requeridos.
+ - Dar de alta al cliente.
+ - Reservar una habitación.
+ - Intentar reservar una habitación para un cliente (cumpliendo la edad) en una fecha.
+ - Intentar reservar una habitación para un cliente (sin cumplir la edad) en una fecha.
+ - Consultar las habitaciones libres para un hotel en una fecha.
+ - Obtener el precio de una reserva.
+ - Anular una reserva de un cliente para una fecha.
+ - Dar de baja el cliente.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 Examen</title>
+  </head>
+  <body>
+    <h1>Ejercicio 2 Examen</h1>
+    <script src="Recursos/ejercicio2.js"></script>
+  </body>
+</html>

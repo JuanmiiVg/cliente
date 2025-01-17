@@ -1,22 +1,22 @@
 function agregarFila() {
-  // Obtener los valores de los inputs
+  // Obtenemos los valores de los inputs
   const nombre = document.getElementById("nombre").value;
   const edad = document.getElementById("edad").value;
   const correo = document.getElementById("correo").value;
 
-  // Validar que los campos no estén vacíos
+  // Validamos que los campos no estén vacíos
   if (nombre === "" || edad === "" || correo === "") {
     alert("Por favor, completa todos los campos.");
     return;
   }
 
-  // Obtener el cuerpo de la tabla
+  // Obtenemos el cuerpo de la tabla
   const tbody = document.querySelector("#tabla tbody");
 
-  // Crear una nueva fila
+  // Creamos una nueva fila
   const fila = document.createElement("tr");
 
-  // Crear las celdas con los datos ingresados
+  // Creamos las celdas con los datos ingresados
   const celdaNombre = document.createElement("td");
   celdaNombre.textContent = nombre;
 
@@ -26,15 +26,15 @@ function agregarFila() {
   const celdaCorreo = document.createElement("td");
   celdaCorreo.textContent = correo;
 
-  // Agregar las celdas a la fila
-  fila.appendChild(celdaNombre);
-  fila.appendChild(celdaEdad);
-  fila.appendChild(celdaCorreo);
+  // Agregamos las celdas a la fila
+  fila.insertAdjacentElement("beforeend", celdaNombre);
+  fila.insertAdjacentElement("beforeend", celdaEdad);
+  fila.insertAdjacentElement("beforeend", celdaCorreo);
 
-  // Agregar la fila al cuerpo de la tabla
-  tbody.appendChild(fila);
+  // Agregamos la fila al cuerpo de la tabla
+  tbody.insertAdjacentElement("beforeend", fila);
 
-  // Limpiar los campos de entrada
+  // Limpiamos los campos de entrada
   document.getElementById("nombre").value = "";
   document.getElementById("edad").value = "";
   document.getElementById("correo").value = "";

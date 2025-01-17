@@ -1,7 +1,7 @@
 function mostrarNombres() {
   // Obtenemos la lista ordenada
   const lista = document.getElementById("lista-personas");
-  // Obtener el primer y último elemento
+  // Obtenemos el primer y último elemento
   const primerNombre = lista.firstElementChild.textContent;
   const ultimoNombre = lista.lastElementChild.textContent;
 
