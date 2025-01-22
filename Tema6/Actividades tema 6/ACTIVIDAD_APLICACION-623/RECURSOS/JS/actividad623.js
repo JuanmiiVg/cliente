@@ -29,5 +29,5 @@ function checkAndDeleteCookies() {
   }
 }
 
-// Ejecutar la comprobación cada 10 segundos
+// Ejecutamos la comprobación cada 10 segundos
 setInterval(checkAndDeleteCookies, 10000);

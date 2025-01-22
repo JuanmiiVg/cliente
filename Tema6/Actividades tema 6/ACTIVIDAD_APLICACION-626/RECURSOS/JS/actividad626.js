@@ -4,7 +4,7 @@ document.getElementById("ordenarLista").addEventListener("click", () => {
 
   // Preguntamos al usuario si desea ordenar la lista
   if (confirm("¿Quieres ordenar la lista alfabéticamente?")) {
-    // Ordenar alfabéticamente
+    // Ordenamos alfabéticamente
     items.sort((a, b) => a.textContent.localeCompare(b.textContent));
   } else {
     // Desordenamos aleatoriamente
