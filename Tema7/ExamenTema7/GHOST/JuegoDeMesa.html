@@ -1,0 +1,57 @@
+<!-- 
+Ghosts es un juego de mesa para 2 jugadores. El juego consiste en un tablero de 6x6 que representa un castillo embrujado.
+Cada jugador tiene 8 fantasmas, 4 buenos(los fantasmas pares) y 4 malos(los fantasmas impares). Los 8 fantasmas se ponen
+en las primeras 2 filas del lado del jugador, cada jugador decide la posición de cada fantasma, dejando libres las esquinas
+ya que representan la salida del castillo.
+
+El juego se va desarrollando en turnos y cada jugador puede mover un fantasma sólo una casilla ya sea horizontal o vertical.
+Pueden comer otro fantasma si se mueven a la casilla donde está. El jugador NO SABRÁ cual es el fantasma bueno o malo de su
+oponente hasta que se lo coma; ya que pueden ser colocados por el jugador en el orden en que más gusten.
+
+¿Cómo se gana? Puede suceder en los siguientes escenarios lo que suceda primero:
+1. Gana quien SE HA COMIDO todos los fantasmas malos.
+2. Gana a quien LE HAN COMIDO todos ss fantasmas malos.
+3. Gana a quien logra llevar un fantasma bueno por la salida del castillo del lado contrario.
+
+Como mínimo el programa debe realizar estas funciones:
+-Los jugadores deberán arrastrar y soltar los fantasmas a las distintas celdas posibles de forma que compruebes que sean
+correctas y estén libres (al principio de la partida).
+-Algún usuario con doble click en un botón start indicará que empieze el juego, y para ello ambos han debido posicionar sus 8
+fantasmas. Se debe llevar un contador de cuantos fantasmas buenos y malos le queda a cada jugador. A la hora de empezar el
+juego ambos tendrán 4 buenos y 4 malos.
+-Se debe ir añadiendo en su contador (mediante el manejo del DOM) los fantasmas que el otro jugador le ha comido.
+-El usuario elegirá el fantasma a mover con un click en la celda, y pulsando las teclas de flechas podrá moverla en direcciones
+indicadas siempre que esté libre o que quiera comerse el fantasma del oponente.
+-Las casillas donde están los fantasmas del jugador 1 se pondrán con fondo rojo y las del jugador 2 con fondo azul.
+-Si el usuario pulsa la tecla r, la página debe recargarse.
+-Se debe notificar quién gana en la web con un mensaje e insertando una imagen.
+-Crea una cookie que registra si ha ganado el jugador 1 o el jugador 2 y que expire en 5 minutos.
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost - Juego Digital</title>
+    <link rel="stylesheet" href="RECURSOS/CSS/styles.css" />
+  </head>
+  <body>
+    <h1>Ghost - Juego Digital</h1>
+    <button id="startGame">Iniciar Juego</button>
+    <div id="board"></div>
+    <div id="status">
+      <p>
+        Jugador 1 - Buenos: <span id="p1Good">4</span> | Malos:
+        <span id="p1Bad">4</span>
+      </p>
+      <p>
+        Jugador 2 - Buenos: <span id="p2Good">4</span> | Malos:
+        <span id="p2Bad">4</span>
+      </p>
+    </div>
+    <p id="winner"></p>
+    <script src="RECURSOS/JS/JuegoDeMesa.js"></script>
+  </body>
+</html>

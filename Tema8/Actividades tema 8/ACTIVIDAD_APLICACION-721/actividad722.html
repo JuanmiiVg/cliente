@@ -1,0 +1,28 @@
+<!-- 
+7.21. Escribe un programa que permita ordenar los elementos de una lista desordenada. 
+Cada elemento debe tener un aspa en su extremo derecho para poder ser eliminado. 
+Además, al final habrá un botón para añadir un elemento. 
+El texto del nuevo elemento se le debe pedir al usuario por teclado.
+-->
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 7.21</title>
+    <link rel="stylesheet" href="RECURSOS/CSS/styles.css" />
+    <script src="RECURSOS/JS/actividad721.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista Ordenable</h1>
+      <ul id="lista">
+        <li>Elemento 3 <button class="remove">&times;</button></li>
+        <li>Elemento 1 <button class="remove">&times;</button></li>
+        <li>Elemento 2 <button class="remove">&times;</button></li>
+      </ul>
+      <button id="ordenar">Ordenar</button>
+      <button id="agregar">Agregar Elemento</button>
+    </div>
+  </body>
+</html>

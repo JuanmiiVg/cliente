@@ -1,0 +1,29 @@
+<!-- 
+7.25. Escribe un programa para simular la velocidad de pulsación de dos teclas. 
+En pantalla aparecerán dos cajas, una verde y otra roja, una debajo de otra. 
+El alto de cada caja será de 40 px y el ancho inicial de 10 px cada una. 
+La primera caja incrementará su ancho 5 px cada vez que se pulse la tecla [a]. 
+La segunda caja hará lo mismo cuando se pulse la tecla [n]. 
+El juego termina cuando una de las cajas llega a 500 px de ancho. 
+En ese momento deben desactivarse los eventos de ambas teclas y mostrarse un mensaje 
+bajo las cajas que ponga «GANA VERDE» o «GANA ROJO». 
+Se trata de calcular con qué mano eres capaz de realizar más pulsaciones.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 7.25</title>
+    <link rel="stylesheet" href="RECURSOS/CSS/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="box-green" class="box" style="background-color: green"></div>
+      <div id="box-red" class="box" style="background-color: red"></div>
+    </div>
+    <p id="winner-message"></p>
+    <script src="RECURSOS/JS/actividad725.js"></script>
+  </body>
+</html>
