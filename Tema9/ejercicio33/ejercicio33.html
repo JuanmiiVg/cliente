@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 33</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        color: #333;
+      }
+      h2 {
+        color: #444;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .section li {
+        margin-bottom: 5px;
+      }
+      .contact-info,
+      .skills,
+      .languages,
+      .education,
+      .experience {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="nombre"></h1>
+
+    <div class="section contact-info">
+      <h2>Información de Contacto</h2>
+      <p><strong>Dirección:</strong> <span id="direccion"></span></p>
+      <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+    </div>
+
+    <div class="section education">
+      <h2>Educación</h2>
+      <ul id="educacion"></ul>
+    </div>
+
+    <div class="section experience">
+      <h2>Experiencia</h2>
+      <ul id="experiencia"></ul>
+    </div>
+
+    <div class="section skills">
+      <h2>Habilidades</h2>
+      <ul id="habilidades"></ul>
+    </div>
+
+    <div class="section languages">
+      <h2>Idiomas</h2>
+      <ul id="idiomas"></ul>
+    </div>
+
+    <script>
+      fetch("curriculum.json")
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("nombre").textContent = data.nombre;
+
+          document.getElementById("direccion").textContent = data.direccion;
+          document.getElementById("telefono").textContent = data.telefono;
+          document.getElementById("email").textContent = data.email;
+
+          const educacionList = document.getElementById("educacion");
+          data.educacion.forEach((edu) => {
+            const li = document.createElement("li");
+            li.textContent = `${edu.titulo} - ${edu.universidad} (${edu.fecha})`;
+            educacionList.appendChild(li);
+          });
+
+          const experienciaList = document.getElementById("experiencia");
+          data.experiencia.forEach((exp) => {
+            const li = document.createElement("li");
+            li.textContent = `${exp.puesto} en ${exp.empresa} (${exp.fecha}): ${exp.descripcion}`;
+            experienciaList.appendChild(li);
+          });
+
+          const habilidadesList = document.getElementById("habilidades");
+          data.habilidades.forEach((habilidad) => {
+            const li = document.createElement("li");
+            li.textContent = habilidad;
+            habilidadesList.appendChild(li);
+          });
+
+          const idiomasList = document.getElementById("idiomas");
+          data.idiomas.forEach((idioma) => {
+            const li = document.createElement("li");
+            li.textContent = `${idioma.idioma}: ${idioma.nivel}`;
+            idiomasList.appendChild(li);
+          });
+        })
+        .catch((error) => {
+          console.error("Error al cargar el archivo JSON:", error);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 9.34. En el sitio https://api.mercadolibre.com/sites/MLA/search?q=libros#options podrás encontrar información sobre cómo 
+ realizar peticiones al gigante del comercio electrónico Mercado Libre usando su API pública.
+Crea una aplicación que consista en un formulario de búsqueda en el que el usuario pueda introducir sus palabras clave. 
+Cuando el usuario busque, la aplicación debe conectarse en segundo plano con Mercado Libre y mostrar de forma asíncrona 
+(sin recargar la página) los tres primeros resultados devueltos por la API.
+ -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 34</title>
+  </head>
+  <body>
+    <h1>Buscar Productos en Mercado Libre</h1>
+    <form id="search-form">
+      <label for="query">Palabras clave:</label>
+      <input
+        type="text"
+        id="query"
+        name="query"
+        placeholder="Ejemplo: libros"
+        required
+      />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div id="search-results"></div>
+
+    <script src="ejercicio34.js"></script>
+  </body>
+</html>

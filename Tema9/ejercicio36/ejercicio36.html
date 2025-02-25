@@ -1,0 +1,50 @@
+<!--36. Escribe un programa en el que hagas un uso combinado de la API Fetch y las funciones Async. 
+Explica brevemente qué ventajas aporta esta solución entre todas las posibles.
+ -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 36</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      .user-list {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+
+      .user {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .user h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .user p {
+        color: #666;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Usuarios</h1>
+    <ul class="user-list" id="user-list"></ul>
+
+    <script src="ejercicio36.js"></script>
+  </body>
+</html>

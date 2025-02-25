@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 35</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #eaeaea;
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 85%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .product {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .product .name {
+        font-weight: bold;
+        margin-top: 15px;
+        text-align: center;
+        color: #333;
+      }
+
+      .product .description {
+        font-size: 15px;
+        color: #555;
+        margin-top: 12px;
+        text-align: center;
+      }
+
+      .product .price {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #17a2b8;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="product" id="product1">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Espresso Fuerte</div>
+        <div class="description">
+          Un café fuerte y sabroso para comenzar el día con energía.
+        </div>
+        <div class="price">$2.99</div>
+      </div>
+      <div class="product" id="product2">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Americano Suave</div>
+        <div class="description">
+          Un café suave y refrescante para disfrutar en cualquier momento.
+        </div>
+        <div class="price">$3.75</div>
+      </div>
+      <div class="product" id="product3">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Latte con Caramelo</div>
+        <div class="description">
+          Un delicioso café con leche espumosa y un toque de caramelo.
+        </div>
+        <div class="price">$4.99</div>
+      </div>
+      <div class="product" id="product4">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Mocha con Chocolate</div>
+        <div class="description">
+          Un café combinado con chocolate y leche espumosa para un sabor
+          intenso.
+        </div>
+        <div class="price">$5.25</div>
+      </div>
+      <div class="product" id="product5">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Capuchino con Canela</div>
+        <div class="description">
+          Un café con leche espumosa y un toque de canela para un sabor único.
+        </div>
+        <div class="price">$4.75</div>
+      </div>
+      <div class="product" id="product6">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Cortado con Leche</div>
+        <div class="description">
+          Un café corto con un toque de leche vaporizada para un sabor suave.
+        </div>
+        <div class="price">$3.25</div>
+      </div>
+      <div class="product" id="product7">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Frappuccino con Helado</div>
+        <div class="description">
+          Un café helado con hielo y crema batida para un sabor fresco y
+          refrescante.
+        </div>
+        <div class="price">$6.99</div>
+      </div>
+      <div class="product" id="product8">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Cold Brew con Hielo</div>
+        <div class="description">
+          Un café frío de larga extracción con un toque suave y fresco.
+        </div>
+        <div class="price">$4.99</div>
+      </div>
+      <div class="product" id="product9">
+        <img src="" alt="Imagen Café" class="coffee-image" />
+        <div class="name">Café Con Leche y Azúcar</div>
+        <div class="description">
+          Un café con un toque cremoso de leche y un poco de azúcar para un
+          sabor dulce.
+        </div>
+        <div class="price">$4.25</div>
+      </div>
+    </div>
+
+    <script src="ejercicio35.js"></script>
+  </body>
+</html>

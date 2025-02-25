@@ -1,0 +1,41 @@
+<!-- 
+9.32. En el sitio https://swapi.dev/ puedes encontrar la documentación de la API de Star Wars.
+Escribe un programa que realice tres peticiones (la persona 1, el planeta 1 y la nave 1) y 
+que muestre en un documento HTML de tres columnas la información devuelta por la API, 
+formateada con las etiquetas HTML que consideres.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 32</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .columna {
+        width: 30%;
+        border: 1px solid #272727;
+        padding: 10px;
+        background-color: #a5a1a2;
+      }
+      h2 {
+        color: #333;
+      }
+      .info {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="columna" id="persona"></div>
+    <div class="columna" id="planeta"></div>
+    <div class="columna" id="nave"></div>
+
+    <script src="ejercicio32.js"></script>
+  </body>
+</html>

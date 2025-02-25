@@ -1,0 +1,54 @@
+{
+  "nombre": "Juan Manuel Vega Carrillo",
+  "direccion": "Calle Wuolah 123, 28080 Madrid",
+  "telefono": "+34 123 456 789",
+  "email": "juanmavega@gmail.com",
+  "educacion": [
+    {
+      "titulo": "Licenciatura en Informática",
+      "universidad": "Universidad de Madrid",
+      "fecha": "2016 - 2020"
+    },
+    {
+      "titulo": "Máster en Desarrollo Web",
+      "universidad": "Universidad de Madrid",
+      "fecha": "2020 - 2022"
+    }
+  ],
+  "experiencia": [
+    {
+      "puesto": "Ingeniero de Software",
+      "empresa": "Software Solutions",
+      "fecha": "2020 - 2022",
+      "descripcion": "Desarrollo de aplicaciones web y mantenimiento de sistemas."
+    },
+    {
+      "puesto": "Desarrollador Full Stack",
+      "empresa": "Tech Company",
+      "fecha": "2022 - Presente",
+      "descripcion": "Desarrollo de aplicaciones web y móviles."
+    }
+  ],
+  "habilidades": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "GitHub",
+    "MySQL",
+    "MongoDB",
+    "PHP",
+    "Laravel"
+  ],
+  "idiomas": [
+    {
+      "idioma": "Español",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Inglés",
+      "nivel": "Avanzado"
+    }
+  ]
+}
