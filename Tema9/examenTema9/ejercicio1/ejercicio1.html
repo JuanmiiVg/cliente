@@ -1,0 +1,23 @@
+<!--  Eres desarrollador en una tienda online y necesitas gestionar pedidos de productos. Para ello,
+  implementarás un módulo que maneje pedidos y otro módulo que los procese. También deberás controlar errores,
+  como cuando un producto no está disponible o hay problemas con el stock.
+  De los productos conocemos su nombre, precio y stock disponible. Estos valores los utilizará en pedidos
+  para realizarPedido mediante el nombreProducto y la cantidad que se requiera y que se actualice el stock;
+  si no hay stock disponible se debe lanzar un error. Crea un documento index.js que importe las funciones del módulo
+  pedidos.js y las use para hacer un pedido, manejando posibles errores con try...catch.  -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <h1>Gestión de Pedidos</h1>
+    <button onclick="hacerPedido('Laptop', 2)">Pedir 2 Laptops</button>
+    <button onclick="hacerPedido('Mouse', 5)">Pedir 5 Mouse</button>
+    <button onclick="hacerPedido('Teclado', 1)">Pedir 1 Teclado</button>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
